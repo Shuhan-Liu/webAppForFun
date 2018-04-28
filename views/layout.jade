@@ -2,6 +2,16 @@ doctype html
 html
   head
     title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
+    block stylesheets
+      link(rel='stylesheet', href='/stylesheets/style.css')
+      link(href="//maxcdn.bootstrapcdn.com/bootswatch/3.3.0/flatly/bootstrap.min.css", rel="stylesheet")
+    block jscripts
+      
   body
-    block content
+    .container
+      block content
+    block bodyscripts
+      script( src='//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js' )
+      script( src='//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js' )
+
+    

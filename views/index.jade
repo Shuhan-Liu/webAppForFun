@@ -1,5 +1,17 @@
 extends layout
+include mixins
 
 block content
-  h1= title
-  p Welcome to #{title}
+  +nav("Project For Fun :D", "dropdown_menu")
+    +nav_item( "index.html", "active" ) Home
+    +nav_item( "about.html" ) About
+    +nav_item( "contact.html" ) Contact
+    +nav_item_dropdown( "#" )( label="Dropdown" )
+      +nav_item( "#" ) Action
+        +nav_item( "#" ) Another action
+        +nav_item( "#" ) Something else here
+        +nav_divider
+        +nav_header Nav header
+        +nav_item( "#" ) Separated link
+        +nav_item( "#" ) One more separated link
+  +button Click And Get Happy

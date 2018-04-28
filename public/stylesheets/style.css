@@ -1,7 +1,36 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+/* html{
+  height: 100%;
 }
+
+header{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 25px;
+  background: #2E86C1;
+  color: white;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+}
+
+.wrapper {
+  min-height: 100%;
+  margin-bottom: -50px;
+}
+.footer{
+  height: 50px;
+  text-align: center;
+  font-size: 25px;
+  background: #2E86C1;
+  color: white;
+}
+.push {
+  height: 50px;
+} */
 
 a {
   color: #00B7FF;
