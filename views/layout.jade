@@ -1,13 +1,27 @@
 doctype html
+include mixins
 html
   head
     title= title
     block stylesheets
       link(rel='stylesheet', href='/stylesheets/style.css')
       link(href="//maxcdn.bootstrapcdn.com/bootswatch/3.3.0/flatly/bootstrap.min.css", rel="stylesheet")
+      meta(name="viewport" content="width=device-width, initial-scale=1.0")
     block jscripts
       
   body
+    +nav("Project For Fun :D", "dropdown_menu", "inverse")
+      +nav_item( "/", "active" ) Home
+      +nav_item( "about.html" ) About
+      +nav_item( "contact.html" ) Contact
+      +nav_item_dropdown( "#" )( label="Dropdown" )
+        +nav_item( "#" ) Action
+          +nav_item( "#" ) Another action
+          +nav_item( "#" ) Something else here
+          +nav_divider
+          +nav_header Nav header
+          +nav_item( "#" ) Separated link
+          +nav_item( "#" ) One more separated link
     .container
       block content
     block bodyscripts
