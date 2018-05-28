@@ -8,7 +8,7 @@ var initRandom = function() {
 
 var roll = function() {
     var index = Math.floor(Math.random()*food.length);
-    var source = "/images/"+food[index]+".gif";
+    var source = "/images/"+food[index]+".jpg";
     var text = "<h3> " + foodText[index];
     $("#thumbnail").attr("src", source);
     $("#textDiv").html(text);
