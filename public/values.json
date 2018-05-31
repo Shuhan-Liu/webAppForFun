@@ -1,0 +1,21 @@
+{
+    "nodes": [
+      {"id": "Center", "group": 1},
+      {"id": "WebDevelopment", "group": 2},
+      {"id": "Backend", "group": 2},
+      {"id": "Frontend", "group": 2},
+      {"id": "DataScience", "group": 3},
+      {"id": "MachineLearning", "group": 3},
+      {"id": "DataEngineering", "group": 3},
+      {"id": "Android", "group": 4}
+    ],
+    "links": [
+      {"source": "Center", "target": "WebDevelopment", "value": 1, "distance": 5},
+      {"source": "Center", "target": "DataScience", "value": 1, "distance": 5},
+      {"source": "Center", "target": "Android", "value": 1, "distance": 5},
+      {"source": "WebDevelopment", "target": "Backend", "value": 1, "distance": 3},
+      {"source": "WebDevelopment", "target": "Frontend", "value": 1, "distance": 3},
+      {"source": "DataScience", "target": "MachineLearning", "value": 1, "distance": 3},
+      {"source": "DataScience", "target": "DataEngineering", "value": 1, "distance": 3}
+    ]
+  }

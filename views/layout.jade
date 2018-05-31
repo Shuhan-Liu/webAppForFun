@@ -4,28 +4,30 @@ html
   head
     title= title
     block stylesheets
+      meta(charset="utf-8")
       link(rel='stylesheet', href='/stylesheets/style.css')
-      link(href="//maxcdn.bootstrapcdn.com/bootswatch/3.3.0/flatly/bootstrap.min.css", rel="stylesheet")
-      meta(name="viewport" content="width=device-width, initial-scale=1.0")
+      link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous")
+      meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
     block jscripts
       
   body
-    +nav("Project For Fun :D", "dropdown_menu", "inverse")
+    +nav("Project For Fun :D", "dropdown_menu", "navbar navbar-expand-sm bg-info navbar-dark")
       +nav_item( "/", "active" ) Home
-      +nav_item( "about.html" ) About
+      +nav_item( "/about" ) About
       +nav_item( "contact.html" ) Contact
       +nav_item_dropdown( "#" )( label="Dropdown" )
-        +nav_item( "#" ) Action
-          +nav_item( "#" ) Another action
-          +nav_item( "#" ) Something else here
-          +nav_divider
-          +nav_header Nav header
-          +nav_item( "#" ) Separated link
-          +nav_item( "#" ) One more separated link
+        +dropdown_item( "#" ) Action
+        +dropdown_item( "#" ) Another action
+        +dropdown_item( "#" ) Something else here
+        +dropdown_divider
+        +nav_header Nav header
+        +dropdown_item( "#" ) Separated link
+        +dropdown_item( "#" ) One more separated link
     .container
       block content
     block bodyscripts
-      script( src='//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js' )
-      script( src='//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js' )
+      script(src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous")
+      script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous")
+      script(src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous")
 
     

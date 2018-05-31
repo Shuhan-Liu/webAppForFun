@@ -1,0 +1,18 @@
+extends layout
+
+block content
+    .row.fullWidth.mt-5#row
+        .card.border-dark.text-white.bg-primary#card(style="width: 40%")
+            img.card-img-top(src= "/images/card.jpg" style="width: 100%")
+            .card-body
+                h5.card-title Leo船长：
+                p.card-text 每天晚上不知道吃啥，就随机点一下咯
+        #chartDiv(style="width: 60%")
+            svg#chart(height="400" width="600" )
+block append bodyscripts
+    script(src="https://d3js.org/d3.v4.min.js")
+    script(src="/javascripts/about.js")
+    script.
+        $( document ).ready(function() {
+            initChart();
+        });
