@@ -1,6 +1,4 @@
 var initChart = function () {
-    // console.log(document.getElementById("row").width)
-    // console.log(document.getElementById("row").height)
 
     var svg = d3.select("#chart");
     width = +svg.attr("width");
